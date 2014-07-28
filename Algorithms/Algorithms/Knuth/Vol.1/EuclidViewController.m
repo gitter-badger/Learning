@@ -8,6 +8,8 @@
 
 #import "EuclidViewController.h"
 
+#import <PromiseKit/PromiseKit.h>
+
 @interface EuclidViewController ()
 
 @property (nonatomic, weak) IBOutlet UITextField *firstField;
@@ -56,8 +58,12 @@
     self.firstNumber = self.firstField.text.integerValue;
     self.secondNumber = self.secondField.text.integerValue;
 
-    self.dividerNumber = [self searchCommonDivideBetween:self.firstNumber andSecond:self.secondNumber];
-    self.resultsLabel.text = [NSString stringWithFormat:@"Divider: %u", self.dividerNumber];
+	dispatch_promise(^{
+		return [self searchCommonDivideBetween:self.firstNumber andSecond:self.secondNumber];
+	}).then(^(NSNumber *divider){
+		self.dividerNumber = divider.unsignedIntegerValue;
+		self.resultsLabel.text = [NSString stringWithFormat:@"Divider: %u", self.dividerNumber];
+	});
 }
 
 - (NSUInteger)searchCommonDivideBetween:(NSUInteger)first andSecond:(NSUInteger)second

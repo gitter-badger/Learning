@@ -5,7 +5,7 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>EC05DEC2-E2DF-4D80-9BFE-ED470C96E5A8</string>
+	<string>46AFB84F-5F35-42F5-AC67-A2DBBF2A8EB1</string>
 	<key>IDESourceControlProjectName</key>
 	<string>Algorithms</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
@@ -14,11 +14,11 @@
 		<string>https://github.com/plushcube/Learning.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Algorithms/Algorithms.xcodeproj/project.xcworkspace</string>
+	<string>Algorithms/Algorithms.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>CF50613E-F7C6-4BBB-BE83-8F1090B357E1</key>
-		<string>../../..</string>
+		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/plushcube/Learning.git</string>
