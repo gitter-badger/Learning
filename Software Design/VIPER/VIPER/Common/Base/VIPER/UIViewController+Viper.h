@@ -17,7 +17,6 @@
 @property (nonatomic, strong) IBOutlet id <ViperPresenterInput> presenter;
 
 + (NSString *)associatedPresenterClassName;
-
 - (NSString *)segueIdentifierForTransition:(ViewTransition)transition;
 
 @end

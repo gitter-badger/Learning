@@ -25,7 +25,6 @@
 		93D22A001AF291D500847212 /* VIPERTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D229FF1AF291D500847212 /* VIPERTests.m */; };
 		93D22A201AF2930F00847212 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93D22A1B1AF2930F00847212 /* Images.xcassets */; };
 		93D22A211AF2930F00847212 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93D22A1C1AF2930F00847212 /* LaunchScreen.xib */; };
-		93D22A3D1AF2A5BD00847212 /* UIStoryboard+Links.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D22A3C1AF2A5BD00847212 /* UIStoryboard+Links.m */; };
 		93D22A6D1AF4CB7100847212 /* AppDependencies.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D22A6C1AF4CB7100847212 /* AppDependencies.m */; };
 		93DDAE4F1AF78AEE009A9B3A /* UserProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = 93DDAE4E1AF78AEE009A9B3A /* UserProfile.m */; };
 		93DDAE541AF78BB4009A9B3A /* UserProfileStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 93DDAE531AF78BB4009A9B3A /* UserProfileStorage.m */; };
@@ -39,6 +38,7 @@
 		93DDAE761AF907AF009A9B3A /* ViperInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 93DDAE751AF907AF009A9B3A /* ViperInteractor.m */; };
 		93DDAE791AF907BE009A9B3A /* ViperRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 93DDAE781AF907BE009A9B3A /* ViperRouter.m */; };
 		93DDAE8B1AF941BF009A9B3A /* UIStoryboardSegue+Viper.m in Sources */ = {isa = PBXBuildFile; fileRef = 93DDAE8A1AF941BF009A9B3A /* UIStoryboardSegue+Viper.m */; };
+		93DDAE8F1AF9D961009A9B3A /* UIStoryboard+Links.m in Sources */ = {isa = PBXBuildFile; fileRef = 93DDAE8E1AF9D961009A9B3A /* UIStoryboard+Links.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,8 +85,6 @@
 		93D229FF1AF291D500847212 /* VIPERTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VIPERTests.m; sourceTree = "<group>"; };
 		93D22A1B1AF2930F00847212 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		93D22A1C1AF2930F00847212 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
-		93D22A3B1AF2A5BD00847212 /* UIStoryboard+Links.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIStoryboard+Links.h"; sourceTree = "<group>"; };
-		93D22A3C1AF2A5BD00847212 /* UIStoryboard+Links.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIStoryboard+Links.m"; sourceTree = "<group>"; };
 		93D22A6B1AF4CB7100847212 /* AppDependencies.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDependencies.h; sourceTree = "<group>"; };
 		93D22A6C1AF4CB7100847212 /* AppDependencies.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDependencies.m; sourceTree = "<group>"; };
 		93DDAE4D1AF78AEE009A9B3A /* UserProfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserProfile.h; sourceTree = "<group>"; };
@@ -118,6 +116,8 @@
 		93DDAE891AF941BF009A9B3A /* UIStoryboardSegue+Viper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIStoryboardSegue+Viper.h"; sourceTree = "<group>"; };
 		93DDAE8A1AF941BF009A9B3A /* UIStoryboardSegue+Viper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIStoryboardSegue+Viper.m"; sourceTree = "<group>"; };
 		93DDAE8C1AF94ABA009A9B3A /* TransitionProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransitionProtocol.h; sourceTree = "<group>"; };
+		93DDAE8D1AF9D961009A9B3A /* UIStoryboard+Links.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIStoryboard+Links.h"; sourceTree = "<group>"; };
+		93DDAE8E1AF9D961009A9B3A /* UIStoryboard+Links.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIStoryboard+Links.m"; sourceTree = "<group>"; };
 		A4B7BE7B9132D44A530F0231 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F447FE3A13A2808BDF91D65A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -357,8 +357,6 @@
 		93D22A101AF2930F00847212 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
-				93D22A3B1AF2A5BD00847212 /* UIStoryboard+Links.h */,
-				93D22A3C1AF2A5BD00847212 /* UIStoryboard+Links.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -490,11 +488,9 @@
 		93DDAE7F1AF9309F009A9B3A /* Router */ = {
 			isa = PBXGroup;
 			children = (
+				93DDAE901AF9D96C009A9B3A /* Helpers */,
 				93DDAE771AF907BE009A9B3A /* ViperRouter.h */,
 				93DDAE781AF907BE009A9B3A /* ViperRouter.m */,
-				93DDAE8C1AF94ABA009A9B3A /* TransitionProtocol.h */,
-				93DDAE891AF941BF009A9B3A /* UIStoryboardSegue+Viper.h */,
-				93DDAE8A1AF941BF009A9B3A /* UIStoryboardSegue+Viper.m */,
 			);
 			name = Router;
 			sourceTree = "<group>";
@@ -534,6 +530,18 @@
 				93DDAE6F1AF90503009A9B3A /* UIViewController+Viper.m */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		93DDAE901AF9D96C009A9B3A /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				93DDAE8C1AF94ABA009A9B3A /* TransitionProtocol.h */,
+				93DDAE8D1AF9D961009A9B3A /* UIStoryboard+Links.h */,
+				93DDAE8E1AF9D961009A9B3A /* UIStoryboard+Links.m */,
+				93DDAE891AF941BF009A9B3A /* UIStoryboardSegue+Viper.h */,
+				93DDAE8A1AF941BF009A9B3A /* UIStoryboardSegue+Viper.m */,
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -703,9 +711,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93DDAE8F1AF9D961009A9B3A /* UIStoryboard+Links.m in Sources */,
 				93DDAE791AF907BE009A9B3A /* ViperRouter.m in Sources */,
 				93DDAE6D1AF904C4009A9B3A /* ViperModule+Protected.m in Sources */,
-				93D22A3D1AF2A5BD00847212 /* UIStoryboard+Links.m in Sources */,
 				93D229E91AF291D400847212 /* AppDelegate.m in Sources */,
 				93D229E61AF291D400847212 /* main.m in Sources */,
 				939F73D71AF7877300D36984 /* InitialDataManager.m in Sources */,

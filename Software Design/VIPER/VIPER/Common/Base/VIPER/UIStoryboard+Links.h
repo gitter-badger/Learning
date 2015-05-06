@@ -10,6 +10,14 @@
 
 @interface UIStoryboard (Links)
 
+/**
+ *  Load a view controller from it's storyboard specified by a special format.
+ *  Format: controllerStoryboardID@storyboardName
+ *
+ *  @param identifier special formatted Storyboard ID.
+ *
+ *  @return view controller or nil if not found.
+ */
 + (UIViewController *)sceneNamed:(NSString *)identifier;
 
 @end

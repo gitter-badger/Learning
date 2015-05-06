@@ -10,9 +10,8 @@
 
 @interface ViperModule : NSObject
 
-- (instancetype)initWithRootModule:(ViperModule *)rootModule;
++ (NSString *)moduleStoryboardName;
 
 - (void)installInWindow:(UIWindow *)window;
-- (void)showInModule:(ViperModule *)module;
 
 @end

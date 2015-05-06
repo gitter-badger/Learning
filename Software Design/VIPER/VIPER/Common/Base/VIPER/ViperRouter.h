@@ -15,8 +15,6 @@
 
 @property (nonatomic, weak) ViperModule *module;
 
-+ (NSString *)moduleStoryboardName;
-
 - (void)installInWindow:(UIWindow *)window;
 - (void)performTransition:(id <TransitionProtocol>)transition;
 

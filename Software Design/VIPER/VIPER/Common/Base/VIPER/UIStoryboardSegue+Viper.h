@@ -13,6 +13,11 @@
 @protocol ViperSegueDelegate <NSObject>
 
 @optional
+/**
+ *  Notifies the source view controller about new segue has been created.
+ *
+ *  @param segue freshly created segue
+ */
 - (void)segueDidPrepared:(UIStoryboardSegue *)segue;
 
 @end

@@ -10,7 +10,8 @@
 
 @implementation UIStoryboard (Links)
 
-+ (UIViewController *)sceneNamed:(NSString *)identifier {
++ (UIViewController *)sceneNamed:(NSString *)identifier
+{
     NSArray *info = [identifier componentsSeparatedByString:@"@"];
 
     NSString *storyboard_name = info[0];

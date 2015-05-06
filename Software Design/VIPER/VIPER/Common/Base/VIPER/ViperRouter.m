@@ -17,7 +17,8 @@
 @property (nonatomic, readonly, strong) UIStoryboard *moduleStoryboard;
 
 - (UIViewController *)createInitialViewController;
-- (void)createSceneWithUserInterface:(UIViewController *)interface;
+- (void)createModuleScene:(ViperModule *)module withUserInterface:(UIViewController *)interface;
+- (ViperModule *)createModuleWithName:(NSString *)moduleName;
 
 @end
 
@@ -25,25 +26,25 @@
 
 @synthesize moduleStoryboard = _moduleStoryboard;
 
-+ (NSString *)moduleStoryboardName
-{
-    return nil;
-}
-
-#pragma mark - Public
-
 - (void)installInWindow:(UIWindow *)window
 {
     UIViewController *controller = [self createInitialViewController];
-    [self createSceneWithUserInterface:controller];
+    [self createModuleScene:self.module withUserInterface:controller];
     window.rootViewController = controller;
 }
 
 - (void)performTransition:(id <TransitionProtocol>)transition
 {
-    // TODO: add logic for inter-module transitions
     UIViewController *controller = transition.destinationViewController;
-    [self createSceneWithUserInterface:controller];
+    ViperModule *targetModule = nil;
+
+    NSString *targetModuleName = [transition targetModuleName];
+    if (targetModuleName) {
+        targetModule = [self createModuleWithName:targetModuleName];
+    } else {
+        targetModule = self.module;
+    }
+    [self createModuleScene:targetModule withUserInterface:controller];
     [transition performTransition];
 }
 
@@ -67,9 +68,9 @@
     return controller;
 }
 
-- (void)createSceneWithUserInterface:(UIViewController *)interface;
+- (void)createModuleScene:(ViperModule *)module withUserInterface:(UIViewController *)interface
 {
-    ViperInteractor *interactor = self.module.interactor;
+    ViperInteractor *interactor = module.interactor;
 
     NSString *className = [[interface class] associatedPresenterClassName];
     NSAssert(className != nil, @"Presenter's class name was not provided!");
@@ -80,6 +81,16 @@
     interface.presenter = presenter;
     presenter.userInterface = interface;
     presenter.router = self;
+}
+
+- (ViperModule *)createModuleWithName:(NSString *)moduleName
+{
+    ViperModule *module = nil;
+    Class moduleClass = NSClassFromString(moduleName);
+    if (moduleClass) {
+        module = [[moduleClass alloc] init];
+    }
+    return module;
 }
 
 @end

@@ -57,6 +57,26 @@ void exchangeMethods(Class class, SEL originalSelector, SEL swizzledSelector);
 
 #pragma mark - <TransitionProtocol>
 
+- (NSString *)targetModuleName
+{
+    static NSString *const kSeparator = @"@";
+
+    NSString *targetModule = nil;
+
+    NSString *identifier = self.identifier;
+    if ([identifier hasPrefix:kSeparator]) {    // transition to initial controller in module - '@module' format
+        targetModule = [identifier substringFromIndex:1];
+    } else {                                    // transition to the controller specified
+        NSArray *items = [identifier componentsSeparatedByString:@"@"];
+        if ([items count] > 1) {                // 'controller@module' format
+            targetModule = items[1];
+        } else {                                // 'controller' format, current module
+        }
+    }
+
+    return targetModule;                        // returns nil for current module
+}
+
 - (void)performTransition
 {
     [self fake_perform];        // the real 'perform' will be called

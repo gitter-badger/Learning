@@ -11,22 +11,17 @@
 
 @implementation ViperModule
 
-- (instancetype)initWithRootModule:(ViperModule *)rootModule
+#pragma mark - Public
+
++ (NSString *)moduleStoryboardName
 {
-    self = [super init];
-    if (self) {
-        [self setRootModule:rootModule];
-    }
-    return self;
+    NSAssert(false, @"Module should know it's Storyboard name");
+    return nil;
 }
 
 - (void)installInWindow:(UIWindow *)window
 {
     [self.router installInWindow:window];
-}
-
-- (void)showInModule:(ViperModule *)module
-{
 }
 
 @end

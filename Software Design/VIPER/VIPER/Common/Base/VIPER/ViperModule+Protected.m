@@ -21,5 +21,4 @@
     return objc_getAssociatedObject(self, @selector(rootModule));
 }
 
-
 @end
