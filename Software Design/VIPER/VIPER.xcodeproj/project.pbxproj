@@ -32,6 +32,13 @@
 		93DDAE571AF78D06009A9B3A /* LocalSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 93DDAE561AF78D06009A9B3A /* LocalSettings.m */; };
 		93DDAE5A1AF78D59009A9B3A /* LocalSettingsStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 93DDAE591AF78D59009A9B3A /* LocalSettingsStorage.m */; };
 		93DDAE661AF7AF3C009A9B3A /* SlideLinkedContentSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 93DDAE651AF7AF3C009A9B3A /* SlideLinkedContentSegue.m */; };
+		93DDAE6A1AF90492009A9B3A /* ViperModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 93DDAE691AF90492009A9B3A /* ViperModule.m */; };
+		93DDAE6D1AF904C4009A9B3A /* ViperModule+Protected.m in Sources */ = {isa = PBXBuildFile; fileRef = 93DDAE6C1AF904C4009A9B3A /* ViperModule+Protected.m */; };
+		93DDAE701AF90503009A9B3A /* UIViewController+Viper.m in Sources */ = {isa = PBXBuildFile; fileRef = 93DDAE6F1AF90503009A9B3A /* UIViewController+Viper.m */; };
+		93DDAE731AF905ED009A9B3A /* ViperPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 93DDAE721AF905ED009A9B3A /* ViperPresenter.m */; };
+		93DDAE761AF907AF009A9B3A /* ViperInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 93DDAE751AF907AF009A9B3A /* ViperInteractor.m */; };
+		93DDAE791AF907BE009A9B3A /* ViperRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 93DDAE781AF907BE009A9B3A /* ViperRouter.m */; };
+		93DDAE8B1AF941BF009A9B3A /* UIStoryboardSegue+Viper.m in Sources */ = {isa = PBXBuildFile; fileRef = 93DDAE8A1AF941BF009A9B3A /* UIStoryboardSegue+Viper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +100,24 @@
 		93DDAE621AF7A3FF009A9B3A /* MenuViewInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewInterface.h; sourceTree = "<group>"; };
 		93DDAE641AF7AF3C009A9B3A /* SlideLinkedContentSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlideLinkedContentSegue.h; sourceTree = "<group>"; };
 		93DDAE651AF7AF3C009A9B3A /* SlideLinkedContentSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlideLinkedContentSegue.m; sourceTree = "<group>"; };
+		93DDAE681AF90492009A9B3A /* ViperModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViperModule.h; sourceTree = "<group>"; };
+		93DDAE691AF90492009A9B3A /* ViperModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViperModule.m; sourceTree = "<group>"; };
+		93DDAE6B1AF904C4009A9B3A /* ViperModule+Protected.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViperModule+Protected.h"; sourceTree = "<group>"; };
+		93DDAE6C1AF904C4009A9B3A /* ViperModule+Protected.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViperModule+Protected.m"; sourceTree = "<group>"; };
+		93DDAE6E1AF90503009A9B3A /* UIViewController+Viper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Viper.h"; sourceTree = "<group>"; };
+		93DDAE6F1AF90503009A9B3A /* UIViewController+Viper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Viper.m"; sourceTree = "<group>"; };
+		93DDAE711AF905ED009A9B3A /* ViperPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViperPresenter.h; sourceTree = "<group>"; };
+		93DDAE721AF905ED009A9B3A /* ViperPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViperPresenter.m; sourceTree = "<group>"; };
+		93DDAE741AF907AF009A9B3A /* ViperInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViperInteractor.h; sourceTree = "<group>"; };
+		93DDAE751AF907AF009A9B3A /* ViperInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViperInteractor.m; sourceTree = "<group>"; };
+		93DDAE771AF907BE009A9B3A /* ViperRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViperRouter.h; sourceTree = "<group>"; };
+		93DDAE781AF907BE009A9B3A /* ViperRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViperRouter.m; sourceTree = "<group>"; };
+		93DDAE7D1AF92F21009A9B3A /* ViperPresenterInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViperPresenterInput.h; sourceTree = "<group>"; };
+		93DDAE841AF93117009A9B3A /* ViperUserInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViperUserInterface.h; sourceTree = "<group>"; };
+		93DDAE881AF9318A009A9B3A /* ViperInteractorIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViperInteractorIO.h; sourceTree = "<group>"; };
+		93DDAE891AF941BF009A9B3A /* UIStoryboardSegue+Viper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIStoryboardSegue+Viper.h"; sourceTree = "<group>"; };
+		93DDAE8A1AF941BF009A9B3A /* UIStoryboardSegue+Viper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIStoryboardSegue+Viper.m"; sourceTree = "<group>"; };
+		93DDAE8C1AF94ABA009A9B3A /* TransitionProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransitionProtocol.h; sourceTree = "<group>"; };
 		A4B7BE7B9132D44A530F0231 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F447FE3A13A2808BDF91D65A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -292,6 +317,7 @@
 		93D22A0B1AF2930F00847212 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				93DDAE671AF9047C009A9B3A /* VIPER */,
 				93D22A0C1AF2930F00847212 /* Cells */,
 				93D22A0D1AF2930F00847212 /* Controllers */,
 				93D22A0E1AF2930F00847212 /* Decorators */,
@@ -443,6 +469,71 @@
 				93DDAE651AF7AF3C009A9B3A /* SlideLinkedContentSegue.m */,
 			);
 			name = Transition;
+			sourceTree = "<group>";
+		};
+		93DDAE671AF9047C009A9B3A /* VIPER */ = {
+			isa = PBXGroup;
+			children = (
+				93DDAE681AF90492009A9B3A /* ViperModule.h */,
+				93DDAE691AF90492009A9B3A /* ViperModule.m */,
+				93DDAE6B1AF904C4009A9B3A /* ViperModule+Protected.h */,
+				93DDAE6C1AF904C4009A9B3A /* ViperModule+Protected.m */,
+				93DDAE831AF930BC009A9B3A /* View */,
+				93DDAE821AF930B4009A9B3A /* Interactor */,
+				93DDAE811AF930AE009A9B3A /* Presenter */,
+				93DDAE801AF930A5009A9B3A /* Entity */,
+				93DDAE7F1AF9309F009A9B3A /* Router */,
+			);
+			path = VIPER;
+			sourceTree = "<group>";
+		};
+		93DDAE7F1AF9309F009A9B3A /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				93DDAE771AF907BE009A9B3A /* ViperRouter.h */,
+				93DDAE781AF907BE009A9B3A /* ViperRouter.m */,
+				93DDAE8C1AF94ABA009A9B3A /* TransitionProtocol.h */,
+				93DDAE891AF941BF009A9B3A /* UIStoryboardSegue+Viper.h */,
+				93DDAE8A1AF941BF009A9B3A /* UIStoryboardSegue+Viper.m */,
+			);
+			name = Router;
+			sourceTree = "<group>";
+		};
+		93DDAE801AF930A5009A9B3A /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Entity;
+			sourceTree = "<group>";
+		};
+		93DDAE811AF930AE009A9B3A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				93DDAE7D1AF92F21009A9B3A /* ViperPresenterInput.h */,
+				93DDAE711AF905ED009A9B3A /* ViperPresenter.h */,
+				93DDAE721AF905ED009A9B3A /* ViperPresenter.m */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		93DDAE821AF930B4009A9B3A /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				93DDAE881AF9318A009A9B3A /* ViperInteractorIO.h */,
+				93DDAE741AF907AF009A9B3A /* ViperInteractor.h */,
+				93DDAE751AF907AF009A9B3A /* ViperInteractor.m */,
+			);
+			name = Interactor;
+			sourceTree = "<group>";
+		};
+		93DDAE831AF930BC009A9B3A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				93DDAE841AF93117009A9B3A /* ViperUserInterface.h */,
+				93DDAE6E1AF90503009A9B3A /* UIViewController+Viper.h */,
+				93DDAE6F1AF90503009A9B3A /* UIViewController+Viper.m */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -612,19 +703,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93DDAE791AF907BE009A9B3A /* ViperRouter.m in Sources */,
+				93DDAE6D1AF904C4009A9B3A /* ViperModule+Protected.m in Sources */,
 				93D22A3D1AF2A5BD00847212 /* UIStoryboard+Links.m in Sources */,
 				93D229E91AF291D400847212 /* AppDelegate.m in Sources */,
 				93D229E61AF291D400847212 /* main.m in Sources */,
 				939F73D71AF7877300D36984 /* InitialDataManager.m in Sources */,
+				93DDAE761AF907AF009A9B3A /* ViperInteractor.m in Sources */,
 				93DDAE661AF7AF3C009A9B3A /* SlideLinkedContentSegue.m in Sources */,
+				93DDAE8B1AF941BF009A9B3A /* UIStoryboardSegue+Viper.m in Sources */,
 				939F73B91AF7747900D36984 /* MenuViewController.m in Sources */,
+				93DDAE701AF90503009A9B3A /* UIViewController+Viper.m in Sources */,
 				939F73B31AF7706700D36984 /* InitialModule.m in Sources */,
 				939F73C01AF7753C00D36984 /* MenuViewPresenter.m in Sources */,
 				939F73A51AF7167900D36984 /* InitialRouter.m in Sources */,
 				939F73B61AF7742A00D36984 /* SlidingViewController.m in Sources */,
 				93DDAE5A1AF78D59009A9B3A /* LocalSettingsStorage.m in Sources */,
 				93DDAE541AF78BB4009A9B3A /* UserProfileStorage.m in Sources */,
+				93DDAE6A1AF90492009A9B3A /* ViperModule.m in Sources */,
 				93D22A6D1AF4CB7100847212 /* AppDependencies.m in Sources */,
+				93DDAE731AF905ED009A9B3A /* ViperPresenter.m in Sources */,
 				939F73BC1AF774EC00D36984 /* MainMenuViewModel.m in Sources */,
 				93DDAE4F1AF78AEE009A9B3A /* UserProfile.m in Sources */,
 				939F73AD1AF71A9B00D36984 /* SplashViewController.m in Sources */,
